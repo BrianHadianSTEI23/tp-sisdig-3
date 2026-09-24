@@ -8,7 +8,7 @@ entity comparator is
         a       : in  std_logic_vector(3 downto 0);
         b       : in  std_logic_vector(3 downto 0);        
 
-        flag     : out std_logic;
+        flag     : out std_logic
     );
 end entity comparator;
 

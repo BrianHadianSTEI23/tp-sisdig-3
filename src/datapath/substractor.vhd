@@ -6,14 +6,14 @@ use ieee.numeric_std.all;
 
 entity substractor is
     generic (
-        b_in    : in  std_logic_vector(3 downto 0) = "0000";
+        b_in    :  std_logic_vector(3 downto 0) := "0000"
     );
     port (
         a       : in  std_logic_vector(3 downto 0);
         b       : in  std_logic_vector(3 downto 0);
         
         -- 7-Segment Displays
-        s       : out std_logic_vector(3 downto 0);
+        s       : out std_logic_vector(3 downto 0)
         -- c_o     : out std_logic_vector(3 downto 0);
     );
 end entity substractor;

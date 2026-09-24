@@ -56,7 +56,7 @@ begin
             selector_regA   => sig_selector_regA,
             en_regB         => sig_en_regB,
             rst_counter     => sig_rst_counter,
-            en_counter      => sig_en_counter,
+            en_counter      => sig_en_counter
         );
 
 end architecture structural;

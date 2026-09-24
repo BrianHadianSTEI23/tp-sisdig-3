@@ -27,7 +27,7 @@ The system follows a classic **FSM + Datapath** structural architecture:
 ## How to test
 ```shell
 # 1. Analyze VHDL source files
-ghdl -a fsm.vhd datapath.vhd top_module.vhd tb/tb_top_module.vhd
+ghdl -a src/datapath/mux.vhd src/datapath/reg.vhd src/datapath/comparator.vhd src/datapath/substractor.vhd src/datapath/counter.vhd src/datapath/datapath.vhd src/fsm/fsm.vhd src/top_module.vhd test/tb/tb_top_module.vhd
 
 # 2. Elaborate testbench entity
 ghdl -e tb_top_module

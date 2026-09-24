@@ -36,7 +36,7 @@ begin
             o   => mux_reg_a 
         );
 
-    register_a : entity work.register 
+    register_a : entity work.reg 
         port map (
             clk => clk,
             d   => mux_reg_a,
@@ -44,7 +44,7 @@ begin
             q   => mem_reg_a 
         );
 
-    register_b : entity work.register 
+    register_b : entity work.reg 
         port map (
             clk => clk,
             d   => b,
